@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="css/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style-sort.css">
+	<script src="js/lightbox-plus-jquery.js"></script>
+	<title>Lightbox</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+    <div class="controls">
+    <button type="button" class="control" data-filter="all">All</button>
+    <button type="button" class="control" data-filter=".green">Green</button>
+    <button type="button" class="control" data-filter=".blue">Blue</button>
+    <button type="button" class="control" data-filter=".red">Red</button>
+    </div>
+    <h1>select DOTA2 heroes based on green / blue / red !</h1>
+    <h1> click on the images to see the lightbox effect !</h1>
+    <div class="container">
+        <div class="mix green">
+            <a href="images/green-1.png" data-lightbox="image-1" data-title="green-1"><img src="images/green-1.png" alt="green-1"></a>
+        </div>
+        <div class="mix green">
+            <a href="images/green-2.png" data-lightbox="image-1" data-title="green-2"><img src="images/green-2.png" alt="green-2"></a>
+        </div>
+        <div class="mix green">
+            <a href="images/green-3.png" data-lightbox="image-1" data-title="green-3"><img src="images/green-3.png" alt="green-3"></a>
+        </div>
+        <div class="mix blue">
+            <a href="images/blue-1.png" data-lightbox="image-1" data-title="blue-1"><img src="images/blue-1.png" alt="blue-1"></a>
+        </div>
+        <div class="mix blue">
+            <a href="images/blue-2.png" data-lightbox="image-1" data-title="blue-2"><img src="images/blue-2.png" alt="blue-2"></a>
+        </div>
+        <div class="mix blue">
+            <a href="images/blue-3.png" data-lightbox="image-1" data-title="blue-3"><img src="images/blue-3.png" alt="blue-3"></a>
+        </div>
+        <div class="mix red">
+            <a href="images/red-1.png" data-lightbox="image-1" data-title="red-1"><img src="images/red-1.png" alt="red-1"></a>
+        </div>
+        <div class="mix red">
+            <a href="images/red-2.png" data-lightbox="image-1" data-title="red-2"><img src="images/red-2.png" alt="red-2"></a>
+        </div>
+        <div class="mix red">
+            <a href="images/red-3.png" data-lightbox="image-1" data-title="red-3"><img src="images/red-3.png" alt="red-3"></a>
+        </div>
+    </div>
+    </main>
+	<script src="js/mixitup.min.js"></script>
+    <script>
+        var containerEl = document.querySelector('.container');
+
+        var mixer = mixitup(containerEl);
+    </script>
+</body>
+</html>
